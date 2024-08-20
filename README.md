@@ -21,7 +21,7 @@ O Playtrade é uma plataforma online que conecta gamers para que possam trocar s
    git clone [https://github.com/Marcellbsb/playtrade-api.git]
 
 2. **Instale as dependências:**</br>
-`cd playtrade-ap`</br>
+`cd playtrade-api`</br>
 `npm install`
 
 3. **Executando o projeto:**</br>
