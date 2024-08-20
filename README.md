@@ -1,4 +1,4 @@
-# Playtrade - A sua plataforma para trocar games!
+# Playtrade - A sua plataforma para trocar jogos e consoles!
 
 ## Sobre o Playtrade
 
