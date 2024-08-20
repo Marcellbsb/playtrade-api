@@ -20,12 +20,12 @@ O Playtrade é uma plataforma online que conecta gamers para que possam trocar s
    ```bash
    git clone [https://github.com/Marcellbsb/playtrade-api.git]
 
-2. **Instale as dependências:**
-cd playtrade-api
-npm install
+2. **Instale as dependências:**</br>
+`cd playtrade-ap`</br>
+`npm install`
 
 3. **Executando o projeto:**
-npm run dev
+`npm run dev`
 
 ##  Contribua com o Playtrade! 
 
