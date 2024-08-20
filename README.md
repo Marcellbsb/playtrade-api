@@ -7,7 +7,7 @@ O Playtrade é uma plataforma online que conecta gamers para que possam trocar s
 ## Tecnologias Utilizadas
 
 * **Frontend:** React, Vite
-* **Backend:** Node.js, Express, MongoDB
+* **Backend:** Node.js, Express e MongoDB
 
 ## Pré-requisitos
 
@@ -24,7 +24,7 @@ O Playtrade é uma plataforma online que conecta gamers para que possam trocar s
 `cd playtrade-ap`</br>
 `npm install`
 
-3. **Executando o projeto:**
+3. **Executando o projeto:**</br>
 `npm run dev`
 
 ##  Contribua com o Playtrade! 
