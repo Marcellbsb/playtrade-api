@@ -6,6 +6,7 @@ import Container from '../../components/Container';
 import Card from '../../components/Card';
 import Category from '../../components/Category';
 import game from '../../json/db.json'
+import console from '../../json/consolesdb.json'
 
 
 function Home() {
@@ -27,13 +28,12 @@ function Home() {
     </section>
     <Category><h2>Consoles</h2></Category>
     <section className='cards' >
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+    {
+            console.map((console) => {
+              return <Card id={console.id} key={console.id} />
+
+            })
+          }
     </section>
     
     
