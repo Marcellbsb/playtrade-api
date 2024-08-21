@@ -1,4 +1,4 @@
-# Playtrade - A sua plataforma para trocar games!
+# Playtrade - A sua plataforma para trocar jogos e consoles!
 
 ## Sobre o Playtrade
 
@@ -7,7 +7,7 @@ O Playtrade é uma plataforma online que conecta gamers para que possam trocar s
 ## Tecnologias Utilizadas
 
 * **Frontend:** React, Vite
-* **Backend:** Node.js, Express, MongoDB
+* **Backend:** Node.js, Express e MongoDB
 
 ## Pré-requisitos
 
@@ -20,12 +20,12 @@ O Playtrade é uma plataforma online que conecta gamers para que possam trocar s
    ```bash
    git clone [https://github.com/Marcellbsb/playtrade-api.git]
 
-2. **Instale as dependências:**
-cd playtrade-api
-npm install
+2. **Instale as dependências:**</br>
+`cd playtrade-api`</br>
+`npm install`
 
-3. **Executando o projeto:**
-npm run dev
+3. **Executando o projeto:**</br>
+`npm run dev`
 
 ##  Contribua com o Playtrade! 
 
