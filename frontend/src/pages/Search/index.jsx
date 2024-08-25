@@ -8,16 +8,12 @@ function Search() {
     return (
         <>
            <Header/>
-           <Container>
-           
-            <section className={styles.search} >
-            
+           <Banner image="creed" />
+           <Container>           
+            <section className={styles.search} >            
             </section>
-            <h2>Pesquisar</h2>
-                
+            <h2>Pesquisar</h2>                
             <input type='search'/>
-            
-            <Banner image="creed" />
             </Container>
             <Footer/>
             
