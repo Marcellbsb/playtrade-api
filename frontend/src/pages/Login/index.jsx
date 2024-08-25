@@ -5,6 +5,7 @@ import styles from './Signup.module.css'
 import Footer from '../../components/Footer'
 import Banner from '../../components/Banner';
 import Home from '../Home';
+import Header from '../../components/Header';
 
 
 
@@ -38,14 +39,11 @@ function LoginPage() {
 
   return (
     <div>
-
+      <Header/>
       <Banner image="devil" />
-
       <p>Faça login e aproveite o que há de melhor no mundo dos gamers.<br />
         Playtrade sinônimo de qualidade e sustentabilidade ! </p>
-      <form className={styles.form} >
-
-        <Link to="/"><img src="/images/logo2.png" className={styles.logo}></img></Link>
+      <form className={styles.form} >    
 
         <div className="mail-cad">
           <label>Email</label>
