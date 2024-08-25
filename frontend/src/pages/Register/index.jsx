@@ -4,6 +4,7 @@ import axios from 'axios';
 import styles from './Register.module.css'
 import Footer from '../../components/Footer';
 import Banner from '../../components/Banner';
+import Header from '../../components/Header';
 
 
 const api = axios.create({
@@ -40,11 +41,11 @@ function Register() {
 
   return (
     <div>
+        <Header />
          <Banner image="shadow" /> 
          <p>Faça seu cadastro e aproveite os benefícios exclusivos para membros.<br/>
          Faça parte dessa comunidade vibrante! </p>     
-      <form className= {styles.form} >
-      <Link to="/"><img src="/images/logo2.png" className={styles.logo}></img></Link>
+      <form className= {styles.form} >      
       <input placeholder='Nome' onChange={e=>setNewUser(e.target.value)} />
       <input placeholder='Email' onChange={e=>setNewEmail(e.target.value)} />
       <input placeholder='Senha' onChange={e=>setNewSenha(e.target.value)} />

@@ -30,8 +30,11 @@ O Playtrade é uma plataforma online que conecta gamers para que possam trocar s
 
 ##  Contribua com o Playtrade! 
 
-![Contribua com o Playtrade](https://github.com/Marcellbsb/imagesplaytrade/blob/main/logo2.png?raw=true)
 
+
+<p align="center">
+  <img src="https://github.com/Marcellbsb/imagesplaytrade/blob/main/logo2.png?raw=true" alt="Contribua com o Playtrade" width="200"/>
+</p>
 Quer fazer parte da nossa comunidade de gamers e ajudar a construir a melhor plataforma de troca de games? É simples! 
 
 **Como começar:**
@@ -41,4 +44,4 @@ Quer fazer parte da nossa comunidade de gamers e ajudar a construir a melhor pla
 * **Envie suas alterações:** `git push origin minha-nova-feature`
 * **Crie um Pull Request:** Descreva suas mudanças de forma clara e concisa.
 
-**Juntos, vamos levar o Playtrade para o próximo nível! **
+**Juntos, vamos levar o Playtrade para o próximo nível!**

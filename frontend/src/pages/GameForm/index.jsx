@@ -51,7 +51,7 @@ const GameForm = () => {
   return (
     <>
       <Header />
-      <Banner image="mortal" />
+      <Banner image="resident" />
       <Container>
         <form onSubmit={handleSubmit}>
           <div>
