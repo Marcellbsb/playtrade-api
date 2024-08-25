@@ -2,24 +2,24 @@
     {
         "id": "Battleborn",
         "title": "Battleborn",
-        "description": "https://github.com/Marcellbsb/imagesplaytrade/blob/main/.png?raw=true",
-        "url": "https://github.com/Dedasar/PIGameOver/blob/main/Imagens%20Jogos/XboxOne/Battleborn.png?raw=true"
+        "description": "Card 1",
+        "url": "Nintendo/2KDrive"
 
     },
 
     {
         "id": "Ben10",
         "title": "Bem 10: Uma super viagem",
-        "description": "",
-        "url": "https://github.com/Dedasar/PIGameOver/blob/main/Imagens%20Jogos/XboxOne/Ben10.png?raw=true"
+        "description": "Card 2",
+        "url": "PS3/CrashBandicootTrilogia"
 
     },
 
     {
         "id": "LegoMovie2",
         "title": "Lego Movie 2",
-        "description": "",
-        "url": "https://github.com/Dedasar/PIGameOver/blob/main/Imagens%20Jogos/XboxOne/LegoMovie2.png?raw=true"
+        "description": "Card 3",
+        "url": "PS4/BloodBowl"
 
     },
    
@@ -27,36 +27,31 @@
     {
         "id": "RUGBY15",
         "title": "Bem 10: Uma super viagem",
-        "description": "",
-        "url": "https://github.com/Dedasar/PIGameOver/blob/main/Imagens%20Jogos/XboxOne/RUGBY15.png?raw=true"
+        "description": "Card 4",
+        "url": "PS5/GoodOfWarRagnarok"
 
     },
 
     {
-        "id": "Battleborn",
+        "id": "Battleborn1",
         "title": "Battleborn",
-        "description": "https://github.com/Marcellbsb/imagesplaytrade/blob/main/.png?raw=true",
-        "url": "https://github.com/Dedasar/PIGameOver/blob/main/Imagens%20Jogos/XboxOne/Battleborn.png?raw=true"
+        "description": "Card 5",
+        "url": "Xbox360/Destiny"
 
     },
 
     {
-        "id": "Ben10",
+        "id": "Ben11",
         "title": "Bem 10: Uma super viagem",
-        "description": "",
-        "url": "https://github.com/Dedasar/PIGameOver/blob/main/Imagens%20Jogos/XboxOne/Ben10.png?raw=true"
+        "description": "Card 6",
+        "url": "XboxOne/LegoMovie2"
 
     },
     {
         "id": "OsIncriveis",
         "title": "Bem 10: Uma super viagem",
-        "description": "",
-        "url": "https://github.com/Dedasar/PIGameOver/blob/main/Imagens%20Jogos/XboxOne/OsIncriveis.png?raw=true"
+        "description": "Card 7",
+        "url": "XboxOne/OsIncriveis"
 
     }
-
-
-
-
-    
 ]
