@@ -1,77 +1,12 @@
-/* Sobre.module.css */
+/* src/components/Banner.css */
+.banner {
+  width: 100%;
+  height: 200px;
+  /* Ajuste a altura conforme necessário */
+  overflow: hidden;
+}
 
-/* Estilos para o conteúdo geral da página */
-.content {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-  }
-  
-  /* Estilos para os parágrafos de introdução */
-  .intro {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-  
-  /* Estilos para a seção de passos */
-  .steps {
-    margin-top: 20px;
-  }
-  
-  .steps h2 {
-    font-size: 20px;
-    color: #000;
-    margin-bottom: 10px;
-  }
-  
-  .steps p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilos para o aviso */
-  .notice {
-    font-size: 14px;
-    color: #d9534f; /* Cor vermelha para destaque */
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  /* Estilos para o botão */
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff; /* Cor azul do botão */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
-  }
-  
-  /* Estilos para a seção de valores */
-  .values {
-    margin-top: 20px;
-  }
-  
-  .values h2 {
-    font-size: 20px;
-    color: #000;
-    margin-bottom: 10px;
-  }
-  
-  .values p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
+.banner img {
+  width: 100%;
+  height: auto;
+}
