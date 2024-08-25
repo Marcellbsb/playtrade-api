@@ -1,15 +1,11 @@
 .search {
     display: flex;
     flex-direction: column;
-    padding-top: 170px;
-  
-   
-    
+    padding-top: 25px;    
 }
 
 h2 {
-    color:  #58c9e8;
-    
+    color:  #58c9e8;    
 }
 
 input {
@@ -18,10 +14,9 @@ input {
     height: 30px;
     align-items: center;
     border: 3px solid greenyellow;
-    margin-bottom: 5px;
-    
-    
+    margin-bottom: 5px;    
 }
+
 header {
     margin-top: -30px;
 }
