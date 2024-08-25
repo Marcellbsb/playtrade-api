@@ -15,10 +15,8 @@ function Search() {
             <h2>Pesquisar</h2>                
             <input type='search'/>
             </Container>
-            <Footer/>
-            
-        </>
-        
+            <Footer/>            
+        </>        
     );
 }
 
