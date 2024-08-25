@@ -1,6 +1,7 @@
-# Playtrade - A sua plataforma para trocar jogos e consoles!
-
-## Sobre o Playtrade
+<div align="center">
+<h1> Playtrade - A sua plataforma para trocar jogos e consoles!
+</h1>
+<h2>Sobre o Playtrade</h2>
 
 O Playtrade é uma plataforma online que conecta gamers para que possam trocar seus jogos e consoles favoritos de forma simples e segura. Descubra novos jogos, conheça outros jogadores e dê uma nova vida aos seus games! 
 
