@@ -7,7 +7,7 @@ function About() {
     return (
         <>
             <Header />
-            <Banner image="" />
+            <Banner image="games" />
             <Container>
                 <p>Sobre o PlayTrade
                     Bem-vindo ao PlayTrade, nossa missão é a sua diversão! Criamos uma plataforma exclusiva para a troca de jogos de mídia física e consoles. Nosso objetivo é transformar a maneira como você troca e descobre novos jogos, conectando jogadores de todas as regiões do Brasil em um ambiente seguro, intuitivo e sustentável.
