@@ -20,7 +20,7 @@ function Home() {
     <section className='cards' >
     {
  game.map ((game) => {
-  return <Card id={game.id} key={game.id}/>
+  return <Card url={game.url} key={game.id}/>
 
 })
     }
@@ -30,7 +30,7 @@ function Home() {
     <section className='cards' >
     {
             console.map((console) => {
-              return <Card id={console.id} key={console.id} />
+              return <Card url={console.url} key={console.id} />
 
             })
           }
