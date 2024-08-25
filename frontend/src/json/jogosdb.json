@@ -3,7 +3,7 @@
         "id": "Battleborn",
         "title": "Battleborn",
         "description": "Card 1",
-        "url": "Nintendo/2KDrive"
+        "url": "Imagens%20Jogos/Nintendo/2KDrive"
 
     },
 
@@ -11,7 +11,7 @@
         "id": "Ben10",
         "title": "Bem 10: Uma super viagem",
         "description": "Card 2",
-        "url": "PS3/CrashBandicootTrilogia"
+        "url": "Imagens%20Jogos/PS3/CrashBandicootTrilogia"
 
     },
 
@@ -19,7 +19,7 @@
         "id": "LegoMovie2",
         "title": "Lego Movie 2",
         "description": "Card 3",
-        "url": "PS4/BloodBowl"
+        "url": "Imagens%20Jogos/PS4/BloodBowl"
 
     },
    
@@ -28,7 +28,7 @@
         "id": "RUGBY15",
         "title": "Bem 10: Uma super viagem",
         "description": "Card 4",
-        "url": "PS5/GoodOfWarRagnarok"
+        "url": "Imagens%20Jogos/PS5/GoodOfWarRagnarok"
 
     },
 
@@ -36,7 +36,7 @@
         "id": "Battleborn1",
         "title": "Battleborn",
         "description": "Card 5",
-        "url": "Xbox360/Destiny"
+        "url": "Imagens%20Jogos/Xbox360/Destiny"
 
     },
 
@@ -44,14 +44,14 @@
         "id": "Ben11",
         "title": "Bem 10: Uma super viagem",
         "description": "Card 6",
-        "url": "XboxOne/LegoMovie2"
+        "url": "Imagens%20Jogos/XboxOne/LegoMovie2"
 
     },
     {
         "id": "OsIncriveis",
         "title": "Bem 10: Uma super viagem",
-        "description": "",
-        "url": ""
+        "description": "Card 7",
+        "url": "Imagens%20Jogos/XboxOne/OsIncriveis"
 
     }
 ]

@@ -1,57 +1,44 @@
 [
     {
-        "id": "Battleborn",
-        "title": "Battleborn",
+        "id": "NintendoSwitch",
+        "title": "NintendoSwitch",
         "description": "Card 1",
-        "url": "Nintendo/2KDrive"
-
+        "url": "ImagensConsoles/NintendoSwitch"
     },
-
     {
-        "id": "Ben10",
-        "title": "Bem 10: Uma super viagem",
+        "id": "PS5",
+        "title": "PS5",
         "description": "Card 2",
-        "url": "PS3/CrashBandicootTrilogia"
-
-    },
-
+        "url": "ImagensConsoles/PS5"
+    },   
     {
-        "id": "LegoMovie2",
-        "title": "Lego Movie 2",
+        "id": "XboxOne",
+        "title": "XboxOne",
         "description": "Card 3",
-        "url": "PS4/BloodBowl"
-
+        "url": "ImagensConsoles/XboxOne"
     },
-   
-    
     {
-        "id": "RUGBY15",
-        "title": "Bem 10: Uma super viagem",
+        "id": "PS4",
+        "title": "PS4",
         "description": "Card 4",
-        "url": "PS5/GoodOfWarRagnarok"
-
-    },
-
+        "url": "ImagensConsoles/PS4"
+    },         
     {
-        "id": "Battleborn1",
-        "title": "Battleborn",
+        "id": "Xbox",
+        "title": "Xbox",
         "description": "Card 5",
-        "url": "Xbox360/Destiny"
-
-    },
-
+        "url": "ImagensConsoles/Xbox"
+    },   
     {
-        "id": "Ben11",
-        "title": "Bem 10: Uma super viagem",
+        "id": "Xbox360",
+        "title": "Xbox360",
         "description": "Card 6",
-        "url": "XboxOne/LegoMovie2"
-
-    },
+        "url": "ImagensConsoles/Xbox360"
+    },   
     {
-        "id": "OsIncriveis",
-        "title": "Bem 10: Uma super viagem",
+        "id": "PS3",
+        "title": "PS3",
         "description": "Card 7",
-        "url": "XboxOne/OsIncriveis"
-
+        "url": "ImagensConsoles/PS3"
     }
 ]

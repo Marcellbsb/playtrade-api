@@ -11,7 +11,7 @@ function Header() {
                 <Link to="/"><img src="/images/logo2.png" className={styles.logo}></img></Link>
                 <Link className={styles.link} to="/register">Cadastro</Link>
                 <Link className={styles.link} to="/login">Login</Link>
-                <Link className={styles.link} to="/about">Sobre</Link>
+                <Link className={styles.link} to="/about">Sobre</Link>                
             </nav>
 
         </header>
