@@ -1,0 +1,67 @@
+.content {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.steps {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.steps h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.steps p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.values {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.values h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.values p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.notice {
+    font-size: 0.9em;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffcc00;
+}
