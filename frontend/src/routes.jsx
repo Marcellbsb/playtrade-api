@@ -6,6 +6,7 @@ import Search from './pages/Search';
 import GameForm from './pages/GameForm';
 import About from './pages/About';
 import Console from './pages/Consoles';
+import Games from './pages/Games/indes';
 
 function AppRoutes() {
     return (
@@ -18,6 +19,7 @@ function AppRoutes() {
                 <Route path="/gameform" element={<GameForm />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/consoles" element={<Console />} />
+                <Route path="/jogos" element={<Games />} />
             </Routes>
         </BrowserRouter>
     );

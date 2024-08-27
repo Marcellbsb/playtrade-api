@@ -52,7 +52,7 @@ const GameForm = () => {
   return (
     <>
       <Header />
-      <Banner image="resident" />
+      <Banner image="mario" />
       <Container>
         <form className={styles.form} onSubmit={handleSubmit} >
           <div>
