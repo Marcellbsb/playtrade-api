@@ -18,7 +18,7 @@ function Home() {
         <section className='cards' >
           {
             game.map((game) => {
-              return <Card url={game.url} key={game.id} />
+              return <Card url={game.url} key={game.id}/>
 
             })
           }

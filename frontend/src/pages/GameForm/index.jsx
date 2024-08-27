@@ -3,6 +3,7 @@ import Banner from '../../components/Banner';
 import Header from '../../components/Header';
 import Container from '../../components/Container';
 import Footer from '../../components/Footer';
+import styles from './GameForm.module.css'
 
 const GameForm = () => {
   const [game, setGame] = useState({
@@ -53,39 +54,17 @@ const GameForm = () => {
       <Header />
       <Banner image="resident" />
       <Container>
-        <form onSubmit={handleSubmit}>
+        <form className={styles.form} onSubmit={handleSubmit} >
           <div>
             <label htmlFor="nome">Nome:</label>
             <input
+              className="input"
               type="text"
               id="nome"
               name="nome"
               placeholder="Insira o nome do Jogo"
               value={game.nome}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="descricao">Descrição:</label>
-            <textarea
-              id="descricao"
-              name="descricao"
-              placeholder="Insira uma breve descrição"
-              value={game.descricao}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="ano_lancamento">Ano de Lançamento:</label>
-            <select
-              id="ano_lancamento"
-              name="ano_lancamento"
-              value={game.ano_lancamento}
-              onChange={handleChange}
-            >
-              <option value="">Selecione o ano</option>
-              {renderYearOptions()}
-            </select>
+              onChange={handleChange} />
           </div>
           <div>
             <label htmlFor="plataforma">Plataforma:</label>
@@ -95,8 +74,7 @@ const GameForm = () => {
               placeholder="Ex: PlayStation 5"
               name="plataforma"
               value={game.plataforma}
-              onChange={handleChange}
-            />
+              onChange={handleChange} />
           </div>
           <div>
             <label htmlFor="classificacaoIndicativa">Classificação Indicativa:</label>
@@ -104,8 +82,7 @@ const GameForm = () => {
               id="classificacaoIndicativa"
               name="classificacaoIndicativa"
               value={game.classificacaoIndicativa}
-              onChange={handleChange}
-            >
+              onChange={handleChange}>
               <option value="">Selecione a classificação</option>
               <option value="Livre">Livre</option>
               <option value="10 anos">10 anos</option>
@@ -121,8 +98,7 @@ const GameForm = () => {
               id="genero"
               name="genero"
               value={game.genero}
-              onChange={handleChange}
-            >
+              onChange={handleChange} >
               <option value="">Selecione o gênero</option>
               <option value="Ação">Ação</option>
               <option value="Aventura">Aventura</option>
@@ -136,13 +112,31 @@ const GameForm = () => {
               <option value="Plataforma">Plataforma</option>
               <option value="Puzzle">Puzzle</option>
               <option value="Terror">Terror</option>
-              <option value="Mundo Aberto">Mundo Aberto</option>                        
+              <option value="Mundo Aberto">Mundo Aberto</option>
             </select>
+            <div>
+              <label htmlFor="ano_lancamento">Ano de Lançamento:</label>
+              <select
+                id="ano_lancamento"
+                name="ano_lancamento"
+                value={game.ano_lancamento}
+                onChange={handleChange}>
+                <option value="">Selecione o ano</option>
+                {renderYearOptions()}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="descricao">Descrição:</label>
+              <textarea
+                id="descricao"
+                name="descricao"
+                placeholder="Insira uma breve descrição"
+                value={game.descricao}
+                onChange={handleChange} />
+            </div>
           </div>
           <button type="submit">Cadastrar Jogo</button>
-          <button type="button" onClick={handleCancel} style={{ marginLeft: '10px' }}>
-            Cancelar
-          </button>
+          <button type="button" onClick={handleCancel}>Cancelar</button>
         </form>
       </Container>
       <Footer />

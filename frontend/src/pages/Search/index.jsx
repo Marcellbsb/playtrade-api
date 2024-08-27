@@ -14,6 +14,7 @@ function Search() {
             </section>
             <h2>Pesquisar</h2>                
             <input type='search'/>
+            <button onClick=''>Pesquisar</button>             
             </Container>
             <Footer/>            
         </>        
