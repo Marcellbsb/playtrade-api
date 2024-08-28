@@ -1,18 +1,10 @@
+/* Footer.module.css */
 .footer {
-    background-color: black;
-    position: absolute;
-    /* bottom: 0; => Se deixar botton:0; ao adicionar container ele sobe */
-    border-top: 2px solid greenyellow;
-    padding-block: 15px;
-    width: 100%;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  p {
-    color: rgb(19, 202, 172);
-    align-items: center;
-  }
-  
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px 0; /* Espaçamento interno no topo e na parte inferior */
+  position: fixed; /* Fixa o rodapé no fundo da página */
+  width: 100%; /* Faz com que o rodapé ocupe 100% da largura */
+  bottom: 0; /* Posiciona o rodapé na parte inferior da página */
+}
