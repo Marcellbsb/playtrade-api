@@ -132,7 +132,6 @@ function Sobre() {
           )}
         </div>
       </Container>
-      {/* Footer removido desta página */}
     </>
   );
 }
