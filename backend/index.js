@@ -62,7 +62,7 @@ app.post('/cadastro', async (req, res) => {
     return res.status(500).json({ message: 'Erro no servidor' });
   }
 });
-app.put('/:id', async (req, res) => {
+app.put('/cadastro/:id', async (req, res) => {
   const id = req.params.id;
   const { name, email, senha, confirmar } = req.body;
   try {
@@ -77,12 +77,10 @@ app.put('/:id', async (req, res) => {
 });
 
 const GamesSchema = new mongoose.Schema({
-  "image_url": String,
+  "image_Url": String,
   "title": String,
-	"description": String,
-	"platform": String,
-	"gender": String,
-	"age": Number	
+  "href": String,
+  "description": String
 });
 
 const Games = mongoose.model('Games', GamesSchema);
@@ -97,10 +95,10 @@ app.get('/games', async (req, res) => {
 });
 
 app.post('/games', async (req, res) => {
-  const { title, gender, description, age, image_url, platform } = req.body;
+  const { image_Url, title, href, description } = req.body;
 
   try {
-    const novoGame = new Games({ title, gender, description, age, image_url, platform });
+    const novoGame = new Games({ image_Url, title, href, description });
     await novoGame.save();
     return res.status(201).json({ message: 'Jogo cadastrado com sucesso' });
   } catch (error) {
@@ -110,10 +108,10 @@ app.post('/games', async (req, res) => {
 
 app.put('/games/:id', async (req, res) => {
   const id = req.params.id;
-  const { title, gender, description, age, image_url, platform } = req.body;
+  const { image_Url, title, href, description } = req.body;
 
   try {
-    const gameAtualizado = await Games.findByIdAndUpdate(id, { title, gender, description, age, image_url, platform }, { new: true });
+    const gameAtualizado = await Games.findByIdAndUpdate(id, { image_Url, title, href, description }, { new: true });
     if (!gameAtualizado) {
       return res.status(404).json({ message: 'Jogo não encontrado' });
     }
@@ -132,6 +130,65 @@ app.delete('/games/:id', async (req, res) => {
       return res.status(404).json({ message: 'Jogo não encontrado' });
     }
     return res.status(200).json({ message: 'Jogo deletado com sucesso' });
+  } catch (error) {
+    return res.status(500).json({ message: 'Erro no servidor' });
+  }
+});
+
+const ConsolesSchema = new mongoose.Schema({
+  "image_Url": String,
+  "title": String,
+  "href": String,
+  "description": String
+});
+
+const Consoles = mongoose.model('Consoles', ConsolesSchema);
+
+app.get('/consoles', async (req, res) => {
+  try {
+    const consoles = await Consoles.find();
+    return res.status(200).json(consoles);
+  } catch (error) {
+    return res.status(500).json({ message: 'Erro no servidor' });
+  }
+});
+
+app.post('/consoles', async (req, res) => {
+  const { image_Url, title, href, description } = req.body;
+
+  try {
+    const novoConsole = new Consoles({ image_Url, title, href, description });
+    await novoConsole.save();
+    return res.status(201).json({ message: 'Console cadastrado com sucesso' });
+  } catch (error) {
+    return res.status(500).json({ message: 'Erro no servidor' });
+  }
+});
+
+app.put('/consoles/:id', async (req, res) => {
+  const id = req.params.id;
+  const { image_Url, title, href, description } = req.body;
+
+  try {
+    const consoleAtualizado = await Consoles.findByIdAndUpdate(id, { image_Url, title, href, description }, { new: true });
+    if (!consoleAtualizado) {
+      return res.status(404).json({ message: 'Console não encontrado' });
+    }
+    return res.status(200).json(consoleAtualizado);
+  } catch (error) {
+    return res.status(500).json({ message: 'Erro no servidor' });
+  }
+});
+
+app.delete('/consoles/:id', async (req, res) => {
+  const id = req.params.id;
+
+  try {
+    const consoleDeletado = await Consoles.findByIdAndDelete(id);
+    if (!consoleDeletado) {
+      return res.status(404).json({ message: 'Console não encontrado' });
+    }
+    return res.status(200).json({ message: 'Console deletado com sucesso' });
   } catch (error) {
     return res.status(500).json({ message: 'Erro no servidor' });
   }

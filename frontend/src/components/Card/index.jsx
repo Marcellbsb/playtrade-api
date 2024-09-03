@@ -1,13 +1,21 @@
-import styles from './Card.module.css'
+import React from 'react';
+import styles from './Card.module.css';
 
-function Card ({url}) {
-    return (
-<section className={styles.card} >
-    <a href={`https://github.com/Marcellbsb/imagesplaytrade/blob/main/batleborndesc.png?raw=true`} >
-    <img src={`https://github.com/Dedasar/PIGameOver/blob/main/${url}.png?raw=true`} alt='img'></img>
-</a>
-</section>
-    );
+function Card({ image_Url, href, title }) {
+  const handleClick = () => {
+    window.location.href = href;
+  };
+
+  return (
+    <section className={styles.card}>
+      <a href="#" onClick={handleClick}>
+        <img src={image_Url} alt="img" /><br/>
+        <span>{title}</span>
+        
+      </a>
+      
+    </section>
+  );
 }
 
 export default Card;

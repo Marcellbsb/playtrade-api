@@ -1,14 +1,15 @@
 import styles from './Footer.module.css';
 
-function Footer () {
+function Footer() {
     return (
-<footer className={styles.footer} >
+        <footer className={styles.footer} >
 
-<p>PlayTrade © {new Date().getFullYear()} - Todos os direitos reservados</p>   
-          
-        
-</footer>
+            <p>PlayTrade © {new Date().getFullYear()} - Todos os direitos reservados</p>
 
- )}
+
+        </footer>
+
+    )
+}
 
 export default Footer;

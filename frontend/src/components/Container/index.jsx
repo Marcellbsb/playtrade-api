@@ -1,10 +1,10 @@
 import styles from './Container.module.css';
 
-function Container ({children}){
+function Container({ children }) {
     return (
-<section className={styles.container} >
-{children}
-</section>
+        <section className={styles.container} >
+            {children}
+        </section>
     )
 }
 

@@ -1,12 +1,11 @@
-/* Adicione esse CSS ao seu arquivo styles.module.css */
  
   .logo {
     width: 180px;
     height: 180px;
     display: flex;
     justify-content: center;
-    margin: 0 auto; /* Opcional para centralizar o logo */
-    margin-top: -30px;
+    margin: 0 auto; 
+    margin-top: -15px;
   }
   .logo:hover {
     transform: scale(1.2);
@@ -23,9 +22,9 @@
   }
   
    .form input {
-    width: 250px; /* Defina a largura desejada para o campo de entrada */
-    height: 30px; /* Defina a altura desejada para o campo de entrada */
-    border: 1px solid #e60707; /* Adicione uma borda para melhor clareza visual */
+    width: 250px; 
+    height: 30px; 
+    border: 1px solid #e60707;
     border-radius: 10px;
     
   }
