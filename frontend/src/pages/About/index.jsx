@@ -1,52 +1,55 @@
-// Sobre.js
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Banner from "../../components/Banner";
 import Container from "../../components/Container";
-import Header from "../../components/Header";
 import styles from "./About.module.css";
+import Footer from "../../components/Footer";
+
 
 function Sobre() {
   const navigate = useNavigate();
-  const [comentarios, setComentarios] = useState([]); // Estado para armazenar comentários
-  const [usuario, setUsuario] = useState(""); // Estado para o campo de usuário
-  const [email, setEmail] = useState(""); // Estado para o campo de e-mail
-  const [comentario, setComentario] = useState(""); // Estado para o campo de comentário
+  const [comentarios, setComentarios] = useState([]);
+  const [usuario, setUsuario] = useState("");
+  const [email, setEmail] = useState("");
+  const [comentario, setComentario] = useState("");
 
   const handleIniciarTroca = () => {
-    navigate("/jogos"); // Redireciona para a página de jogos
+    navigate("/jogos");
   };
 
   const handleConsoles = () => {
-    navigate("/consoles"); // Redireciona para a página de consoles
+    navigate("/consoles");
   };
 
   const handleEnviarComentario = () => {
-    if (usuario && email && comentario) { // Verifica se todos os campos estão preenchidos
+    if (usuario && email && comentario) {
       const novoComentario = {
         usuario,
         email,
         comentario,
-        data: new Date().toLocaleString(), // Adiciona a data e hora do comentário
+        data: new Date().toLocaleString(),
       };
-      setComentarios([...comentarios, novoComentario]); // Adiciona o novo comentário ao estado
-      setUsuario(""); // Limpa o campo de usuário
-      setEmail(""); // Limpa o campo de e-mail
-      setComentario(""); // Limpa o campo de comentário
+      setComentarios([...comentarios, novoComentario]);
+      setUsuario("");
+      setEmail("");
+      setComentario("");
     } else {
       alert("Por favor, preencha todos os campos antes de enviar.");
     }
   };
 
   const handleExcluirComentario = (index) => {
-    const novosComentarios = comentarios.filter((_, i) => i !== index); // Filtra para remover o comentário pelo índice
+    const novosComentarios = comentarios.filter((_, i) => i !== index);
     setComentarios(novosComentarios);
   };
 
   return (
     <>
-      <Header />
       <Banner image="kripto" />
+      <Link to="/">
+      <img src="/images/logo2.png" className={styles.logo} alt="logo" />
+      </Link>
       <Container>
         <div className={styles.intro}>
           <p className={styles.introText}>Fala, Jogador! Tudo certo?</p>
@@ -69,22 +72,16 @@ function Sobre() {
           <p>O sistema da PlayTrade garantirá que todos os envolvidos na troca estejam devidamente verificados, criando um ambiente seguro para todos.</p>
           <p className={styles.notice}>Lembre-se: Apenas jogadores que passaram pelo processo de verificação completo poderão marcar pontos de encontro e realizar trocas.</p>
           <button className={styles.button} onClick={handleIniciarTroca}>Iniciar Troca!</button>
-        </div>
+        </div>  
 
         <div className={styles.steps}>
-          <h2>2. Qual é o cálculo sobre o valor da troca?</h2>
-          <p>Os valores dos jogos a serem trocados são definidos pelos próprios usuários, com base no valor de mercado atual. É importante que o valor informado esteja em conformidade com o preço atual do mercado para garantir uma troca justa e equilibrada.</p>
-          <p>Além disso, peça vídeos e fotos para garantir á integridade do jogo, para que ambas as partes possam estar satisfeitas com a negociação.</p>
-        </div>
-
-        <div className={styles.steps}>
-          <h2>3. Como é realizada a troca?</h2>
-          <p>Após a definição dos valores e o agendamento do ponto de encontro, você e o outro jogador se encontrarão para efetivar a troca. No entanto, lembre-se de que o PlayTrade não realiza transações financeiras; as trocas são baseadas em confiança e nas verificações dos usuários.</p>
+          <h2>2. Como é realizada a troca?</h2>
+          <p>Após a definir os jogos de interesse e o agendamento do ponto de encontro, você e o outro jogador se encontrarão para efetivar a troca. No entanto, lembre-se de que o PlayTrade não realiza transações financeiras; as trocas são baseadas em confiança e nas verificações dos usuários.</p>
           <p className={styles.notice}>Observação: Certifique-se de que todos os detalhes foram acordados antes da troca, e caso haja algum problema, entre em contato com o suporte do PlayTrade para assistência.</p>
         </div>
 
         <div className={styles.steps}>
-          <h2>4. Como posso começar?</h2>
+          <h2>3. Como posso começar?</h2>
           <p>Agora que você já sabe como funciona, clique no botão abaixo para iniciar sua troca! Lembre-se de que a segurança é prioridade, então verifique todos os detalhes e aproveite para conhecer novos jogos e jogadores.</p>
           <button className={styles.button} onClick={handleConsoles}>Consoles</button>
         </div>
@@ -131,7 +128,7 @@ function Sobre() {
             <p>Seja o primeiro a comentar!</p>
           )}
         </div>
-      </Container>
+      </Container>      
     </>
   );
 }

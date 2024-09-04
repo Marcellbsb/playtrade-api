@@ -89,3 +89,17 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.logo {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  filter: brightness(1.7);
+}
