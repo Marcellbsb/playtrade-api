@@ -41,8 +41,7 @@ function Register() {
   return (
     <div>
       <Banner image="shadow" />
-      <p>Faça seu cadastro e aproveite os benefícios exclusivos para membros.<br />
-        Faça parte dessa comunidade vibrante! </p>
+      <p>Faça seu cadastro e aproveite os benefícios exclusivos para membros. </p>
       <form className={styles.form} >
         <Link to="/"><img src="/images/logo2.png" className={styles.logo}></img></Link>
         <input placeholder='Nome' onChange={e => setNewUser(e.target.value)} />
