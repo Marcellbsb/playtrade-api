@@ -1,48 +1,52 @@
-/* src/pages/Sobre/Sobre.module.css */
-
 .intro {
-  background-color: #1f1f1f; /* Preto claro */
+  background-color: #1f1f1f;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
+  text-align: justify
 }
 
 .introText {
-  color: #f5f5f5; /* Texto branco */
-  font-size: 20px; /* Fonte maior */
-  line-height: 1.6; /* Melhorar a legibilidade */
-  margin-bottom: 20px; /* Espaçamento inferior */
+  color: greenyellow;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 .steps {
-  background-color: #1f1f1f; /* Preto claro */
+  background-color: #1f1f1f;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
-  color: #f5f5f5; /* Texto em branco */
+  color: greenyellow;
+  text-align: justify
 }
 
 .steps h2 {
-  font-size: 24px; /* Fonte maior para títulos */
-  color: #f5f5f5;
+  font-size: 15px;
+  color: greenyellow;
   margin-bottom: 10px;
+  text-align: justify
 }
 
 .steps p {
-  font-size: 18px; /* Fonte maior para parágrafos */
-  color: #dcdcdc;
-  line-height: 1.6; /* Melhorar a legibilidade */
+  font-size: 15px;
+  color: greenyellow;
+  line-height: 1.6;
+  text-align: justify
 }
 
 .notice {
   font-weight: bold;
-  color: #ff6f61; /* Destaque em tom de laranja avermelhado */
+  color: #ff6f61;
+  text-align: justify
 }
 
 .commentForm {
-  background-color: #1f1f1f; /* Preto claro */
+  background-color: #1f1f1f;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -50,8 +54,8 @@
 }
 
 .commentForm h2 {
-  color: #f5f5f5; /* Texto branco */
-  font-size: 24px; /* Fonte maior */
+  color: #f5f5f5;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -66,8 +70,8 @@
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #333; /* Fundo escuro para campos */
-  color: #f5f5f5; /* Texto branco para campos */
+  background-color: #333;
+  color: #f5f5f5;
 }
 
 .formGroup textarea {
@@ -78,12 +82,12 @@ button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 15px 20px; /* Aumenta o padding vertical para aumentar a altura do botão */
+  padding: 15px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  display: block; /* Para centralizar */
-  margin: 20px auto; /* Para centralizar horizontalmente e adicionar espaçamento vertical */
+  display: block;
+  margin: 20px auto;
 }
 
 button:hover {
