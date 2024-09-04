@@ -2,14 +2,10 @@
     display: flex;
     flex-direction: column;
     padding-top: 170px;
-  
-   
-    
 }
 
 h2 {
-    color:  #58c9e8;
-    
+    color: #58c9e8;
 }
 
 input {
@@ -19,13 +15,26 @@ input {
     align-items: center;
     border: 3px solid greenyellow;
     margin-bottom: 5px;
-    
-    
 }
+
 header {
     margin-top: -30px;
 }
 
 footer {
     position: absolute;
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    filter: brightness(1.7);
 }
