@@ -1,0 +1,39 @@
+.ranking {
+  text-align: center;
+  margin: 2rem 0;
+  width: 100%; /* Garante que o ranking ocupe a largura completa */
+}
+
+.ranking-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap; /* Adiciona flex-wrap para quebrar linha se necessário */
+}
+
+.ranking-item {
+  margin: 1rem;
+  text-align: center;
+  flex: 1 1 20%; /* Cada item ocupará 20% do container, ajustável conforme necessário */
+}
+
+.ranking-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem seja cortada de maneira adequada */
+}
+
+.ranking-info {
+  margin-top: 0.5rem;
+}
+
+.ranking-name {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.ranking-exchanges {
+  font-size: 0.9rem;
+}
