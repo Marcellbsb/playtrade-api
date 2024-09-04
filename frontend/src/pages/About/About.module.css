@@ -1,13 +1,91 @@
-   .logo {
-    width: 180px;
-    height: 180px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto; 
-    margin-top: 10px;
-  }
-  .logo:hover {
-    transform: scale(1.2);
-    filter: brightness(1.7);
-  }
-  
+/* src/pages/Sobre/Sobre.module.css */
+
+.intro {
+  background-color: #1f1f1f; /* Preto claro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.introText {
+  color: #f5f5f5; /* Texto branco */
+  font-size: 20px; /* Fonte maior */
+  line-height: 1.6; /* Melhorar a legibilidade */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.steps {
+  background-color: #1f1f1f; /* Preto claro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  color: #f5f5f5; /* Texto em branco */
+}
+
+.steps h2 {
+  font-size: 24px; /* Fonte maior para títulos */
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.steps p {
+  font-size: 18px; /* Fonte maior para parágrafos */
+  color: #dcdcdc;
+  line-height: 1.6; /* Melhorar a legibilidade */
+}
+
+.notice {
+  font-weight: bold;
+  color: #ff6f61; /* Destaque em tom de laranja avermelhado */
+}
+
+.commentForm {
+  background-color: #1f1f1f; /* Preto claro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.commentForm h2 {
+  color: #f5f5f5; /* Texto branco */
+  font-size: 24px; /* Fonte maior */
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #333; /* Fundo escuro para campos */
+  color: #f5f5f5; /* Texto branco para campos */
+}
+
+.formGroup textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 20px; /* Aumenta o padding vertical para aumentar a altura do botão */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block; /* Para centralizar */
+  margin: 20px auto; /* Para centralizar horizontalmente e adicionar espaçamento vertical */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
