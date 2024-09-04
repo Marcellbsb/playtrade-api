@@ -48,7 +48,7 @@ function Sobre() {
     <>
       <Banner image="kripto" />
       <Link to="/">
-      <img src="/images/logo2.png" className={styles.logo} alt="logo" />
+        <img src="/images/logo2.png" className={styles.logo} alt="logo" />
       </Link>
       <Container>
         <div className={styles.intro}>
@@ -72,7 +72,7 @@ function Sobre() {
           <p>O sistema da PlayTrade garantirá que todos os envolvidos na troca estejam devidamente verificados, criando um ambiente seguro para todos.</p>
           <p className={styles.notice}>Lembre-se: Apenas jogadores que passaram pelo processo de verificação completo poderão marcar pontos de encontro e realizar trocas.</p>
           <button className={styles.button} onClick={handleIniciarTroca}>Iniciar Troca!</button>
-        </div>  
+        </div>
 
         <div className={styles.steps}>
           <h2>2. Como é realizada a troca?</h2>
@@ -89,26 +89,26 @@ function Sobre() {
         <div className={styles.commentForm}>
           <h2>Deixe seu comentário</h2>
           <div className={styles.formGroup}>
-            <input 
-              type="text" 
-              placeholder="Usuário" 
-              value={usuario} 
-              onChange={(e) => setUsuario(e.target.value)} 
+            <input
+              type="text"
+              placeholder="Usuário"
+              value={usuario}
+              onChange={(e) => setUsuario(e.target.value)}
             />
           </div>
           <div className={styles.formGroup}>
-            <input 
-              type="email" 
-              placeholder="E-mail" 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
+            <input
+              type="email"
+              placeholder="E-mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className={styles.formGroup}>
-            <textarea 
-              placeholder="Seu comentário..." 
-              value={comentario} 
-              onChange={(e) => setComentario(e.target.value)} 
+            <textarea
+              placeholder="Seu comentário..."
+              value={comentario}
+              onChange={(e) => setComentario(e.target.value)}
             ></textarea>
           </div>
           <button className={styles.button} onClick={handleEnviarComentario}>Enviar</button>
@@ -128,7 +128,7 @@ function Sobre() {
             <p>Seja o primeiro a comentar!</p>
           )}
         </div>
-      </Container>      
+      </Container>
     </>
   );
 }
