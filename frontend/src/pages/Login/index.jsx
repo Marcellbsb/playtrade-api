@@ -39,7 +39,7 @@ function LoginPage() {
 
       <p>
         Faça login e aproveite o que há de melhor no mundo dos gamers.
-        <br /> Playtrade sinônimo de qualidade e sustentabilidade!
+        
       </p>
       <form className={styles.form}>
         <Link to="/">
