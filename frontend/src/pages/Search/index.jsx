@@ -1,23 +1,28 @@
-import { Link } from 'react-router-dom';
+import styles from './Search.module.css'
+import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Container from '../../components/Container';
 import Banner from '../../components/Banner';
-import styles from './Search.module.css';
 
 function Search() {
     return (
-        <div>
-            <Banner image="creed" />
-            <p>Insira o texto para pesquisar</p>
-            <Link to="/">
-                <img src="/images/logo2.png" className={styles.logo} alt="logo" />
-            </Link>
+        <>
+           <Header/>
+           <Container>
+           
             <section className={styles.search} >
+            
             </section>
             <h2>Pesquisar</h2>
-            <input type='search' />
-
-            <Footer />
-        </div>
+                
+            <input type='search'/>
+            
+            <Banner image="creed" />
+            </Container>
+            <Footer/>
+            
+        </>
+        
     );
 }
 
