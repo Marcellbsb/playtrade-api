@@ -22,14 +22,14 @@ function LoginPage() {
       });
       const token = response.data.token;
 
-      // Store token in localStorage (consider using a more secure option)
+      // Armazenar o token no localStorage (considere usar uma opção mais segura)
       localStorage.setItem('token', token);
 
-      // Redirect to home page after successful login
-      navigate('/');
+      // Redirecionar para a página de acesso após o login bem-sucedido
+      navigate('/access');
     } catch (error) {
       console.error(error);
-      // Handle login errors (display error message)
+      // Tratar erros de login (exibir mensagem de erro)
     }
   };
 
@@ -37,10 +37,8 @@ function LoginPage() {
     <div>
       <Banner image="devil" />
 
-      <p>
-        Faça login e aproveite o que há de melhor no mundo dos gamers.
-        
-      </p>
+      <p>Faça login e aproveite o que há de melhor no mundo dos gamers.</p>
+      
       <form className={styles.form}>
         <Link to="/">
           <img src="/images/logo2.png" className={styles.logo} alt="logo" />
