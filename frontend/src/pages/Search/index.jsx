@@ -1,21 +1,42 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import styles from './Search.module.css';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
 import Banner from '../../components/Banner';
+import Category from '../../components/Category';
+import Card from '../../components/Card';
 
-function Search() {
+const api = axios.create({
+    baseURL: "http://localhost:3000"
+});
+  
+  function Search() {
     const [query, setQuery] = useState('');
-    const [results, setResults] = useState([]);
+    const [resGames, setGames] = useState([]);
+    const [resConsoles, setConsoles] = useState([]);
 
-    const handleSearch = async () => {
+    const handleSearchGame = async () => {
         try {
-            const response = await fetch(`/api/search?query=${query}`);
-            const data = await response.json();
-            setResults(data);
+            const response = await api.get('/gameslist/'+query);
+            console.log(response.data);
+            const data = response.data;
+            setGames(data);
+            handleSearchConsole();
         } catch (error) {
             console.error('Erro ao buscar os jogos:', error);
+        }
+    };
+
+    const handleSearchConsole = async () => {
+        try {
+            const response = await api.get('/consoleslist/'+query);
+            console.log(response.data);
+            const data = response.data;
+            setConsoles(data);
+        } catch (error) {
+            console.error('Erro ao buscar os consoles:', error);
         }
     };
 
@@ -34,18 +55,31 @@ function Search() {
                             placeholder="Insira o nome do jogo ou console"
                             value={query}
                             onChange={(e) => setQuery(e.target.value)}
-                            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+                            onKeyDown={(e) => e.key === 'Enter' && handleSearchGame() && handleSearchConsole()}
                         />
-                        <button onClick={handleSearch}>Pesquisar</button>
+                        <button onClick={handleSearchGame}>Pesquisar</button>
                     </div>
                 </section>
-                {results.length > 0 && (
-                    <ul>
-                        {results.map(game => (
-                            <li key={game._id}>{game.name}</li>
-                        ))}
-                    </ul>
-                )}
+
+                <Category><h2>Jogos</h2></Category>
+                <section className='cards'>
+                    {resGames.map((game) => (
+                        <Card key={game._id} image_Url={game.image_Url} href={game.href} title={game.title} />
+                    ))}
+                    {resGames.length === 0 && (
+                        <p>Nenhum jogo encontrado para argumento de pesquisa.</p>
+                    )}
+                </section>
+
+                <Category><h2>Consoles</h2></Category>
+                <section className='cards'>
+                    {resConsoles.map((console) => (
+                        <Card key={console._id} image_Url={console.image_Url} href={console.href} title={console.title} />
+                    ))}
+                    {resConsoles.length === 0 && (
+                        <p>Nenhum console encontrado para argumento de pesquisa.</p>
+                    )}
+                </section>
 
             </Container>
             <Footer />
