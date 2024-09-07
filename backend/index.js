@@ -94,6 +94,16 @@ app.get('/games', async (req, res) => {
   }
 });
 
+app.get('/gameslist/:arg', async (req, res) => {
+  const arg = req.params.arg;
+  try {
+    const games = await Games.find({title: {"$regex": req.params.arg, "$options": "i"}});
+    return res.status(200).json(games);
+  } catch (error) {
+    return res.status(500).json({ message: 'Erro no servidor' });
+  }
+});
+
 app.post('/games', async (req, res) => {
   const { image_Url, title, href, description } = req.body;
 
@@ -160,6 +170,16 @@ app.post('/consoles', async (req, res) => {
     const novoConsole = new Consoles({ image_Url, title, href, description });
     await novoConsole.save();
     return res.status(201).json({ message: 'Console cadastrado com sucesso' });
+  } catch (error) {
+    return res.status(500).json({ message: 'Erro no servidor' });
+  }
+});
+
+app.get('/consoleslist/:arg', async (req, res) => {
+  const arg = req.params.arg;
+  try {
+    const consoles = await Consoles.find({title: {"$regex": req.params.arg, "$options": "i"}});
+    return res.status(200).json(consoles);
   } catch (error) {
     return res.status(500).json({ message: 'Erro no servidor' });
   }
