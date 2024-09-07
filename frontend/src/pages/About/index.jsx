@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Banner from "../../components/Banner";
 import Container from "../../components/Container";
 import styles from "./About.module.css";
-import Footer from "../../components/Footer";
+
 
 
 function Sobre() {
