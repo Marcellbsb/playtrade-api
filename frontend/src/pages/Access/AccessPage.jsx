@@ -6,11 +6,11 @@ import Header from '../../components/Header'; // Reutilizando o Header
 import styles from './AccessPage.module.css';
 
 const rankingData = [
-  { id: 1, name: 'Daniela', location: 'Osasco / SP', imageUrl: '/images/user1.png', position: 1 },
+  { id: 1, name: 'Denise', location: 'São Roque / SP', imageUrl: '/images/Denise.png', position: 1 },
   { id: 2, name: 'Leonardo', location: 'São Paulo / SP', imageUrl: '/images/leo.png', position: 2 },
-  { id: 3, name: 'Luiz', location: 'Rio de Janeiro / RJ', imageUrl: '/images/freitas.png', position: 3 },
-  { id: 4, name: 'Marcelo', location: 'São Paulo / SP', imageUrl: '/images/Marcelo.png', position: 4 },
-  { id: 5, name: 'Matheus', location: 'Rio de Janeiro / RJ', imageUrl: '/images/Matheus.png', position: 5 },
+  { id: 3, name: 'Luiz', location: 'Brasilia / DF', imageUrl: '/images/freitas.png', position: 3 },
+  { id: 4, name: 'Marcelo', location: 'Brasília / DF', imageUrl: '/images/Marcelo.png', position: 4 },
+  { id: 5, name: 'Matheus', location: 'São Paulo / SP', imageUrl: '/images/Matheus.png', position: 5 },
 ];
 
 function AccessPage() {
