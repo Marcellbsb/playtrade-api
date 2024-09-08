@@ -40,9 +40,7 @@ function LoginPage() {
       <p>Faça login e aproveite o que há de melhor no mundo dos gamers.</p>
       
       <form className={styles.form}>
-        <Link to="/">
-          <img src="/images/logo2.png" className={styles.logo} alt="logo" />
-        </Link>
+        
 
         <div className="mail-cad">
           <label htmlFor="email">Email</label>
