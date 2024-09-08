@@ -45,6 +45,7 @@ function GameList() {
       <Banner image="multi" />
 
       <Link to="/"><img src="/images/logo2.png" className={styles.logo}></img></Link>
+      <form className={styles.form} >
 
       <form onSubmit={handleNewGameSubmit}>
         <label htmlFor="image_Url"><p>Insira a URL da imagem do seu jogo<br /></p>
@@ -74,7 +75,8 @@ function GameList() {
           required
         />
         
-        <button type="submit">Cadastrar Jogo</button>
+        <button type="submit">Cadastrar</button>
+      </form>
       </form>
       <Footer />
       <ul>

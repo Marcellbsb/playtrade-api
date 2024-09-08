@@ -6,11 +6,17 @@ form {
   padding: 2px;
   font-size: 14px;
   line-height: 0.2;
-  border: 1px red solid;
+ 
 
 
 }
 
+.form input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #e60707;
+  border-radius: 10px;
+}
 .form input:focus::placeholder {
   opacity: 0.5;
   
@@ -49,7 +55,7 @@ p {
   filter: brightness(1.7);
 }
 
-button {
+.form button {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -58,9 +64,9 @@ button {
   width: 150px;
   height: 40px;
   border-radius: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+
 }
+
 
 button:hover {
   transform: scale(1.2);
