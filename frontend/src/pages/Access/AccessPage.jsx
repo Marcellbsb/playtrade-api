@@ -22,12 +22,12 @@ function AccessPage() {
       <div className={styles.container}>
         <h2>Bem-vindo à Área de Acesso</h2>
         <div className={styles.buttons}>
-          <Link to="/cadastro-jogo" className={styles.button}>
-            Cadastre seu jogo
-          </Link>
-          <Link to="/jogos" className={styles.button}>
+        <Link to="/gamesregister" className={styles.button}>
+        Cadastre seu jogo
+        </Link> {/* Alterado para redirecionar para a página Jogos */}
+          <Link to="/" className={styles.button}>
             Jogos
-          </Link>
+          </Link> {/* Redirecionando para Home */}
         </div>
 
         {/* Ranking de Trocadores */}
