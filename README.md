@@ -6,7 +6,9 @@
 O Playtrade é uma plataforma online que conecta gamers para que possam trocar seus jogos e consoles favoritos de forma simples e segura. Descubra novos jogos, conheça outros jogadores e dê uma nova vida aos seus games! 
 
 ## Tecnologias Utilizadas
-
+* **personas e jornada de usuários:** Miro
+* **Prototipação:** Figma
+* **Modelo de entidade de relacionamento:** lucidchart
 * **Frontend:** React, Vite
 * **Backend:** Node.js, Express e MongoDB
 
